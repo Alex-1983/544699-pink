@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>photo.html</title>
+  <title>HTML ACADEMY: Пинк</title>
 </head>
-  <body class="page-body">
+  <body class="page">
     <header class="page-header">
       <a class="page-header__logo">
         <img class="page-header__logo-img" src="img/logotype-white-mobile" width="75" height="22" alt="pink">
@@ -27,8 +27,8 @@
         </ul>
       </nav>
       <section class="intro">
-        <div class="page-title__wrapper">
-          <h1 class="page-title">Фотографии пользователей</h1>
+        <div class="page-title1__wrapper">
+          <h1 class="page-title1">Фотографии пользователей</h1>
         </div>
       </section>
     </header>
@@ -37,148 +37,162 @@
         <p class="appeal__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
       <section class="photo">
-        <div class="photo__wrapper">
-          <article class="photo__item">
-            <img src="http://placehold.it/150x100">
+        <ul class="photo__list">
+          <li class="photo__item">
+            <a class="photo__link" href="#">
+              <img src="http://placehold.it/150x100">
+            </a>
             <span class="photo__hit">Панорама дня</span>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
-                <cite class="photo__author-name">Анна</cite>
+                <a class="photo__author-name" href="#">Анна</a>
                 <span class="photo__text">(5 минут назад)</span>
               </div>
               <blockquote class="photo__author-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
-              <div class="photo__like">
-                <a class="photo__like-link" href="#"></a>
-                <span class="photo-like__number">Нравится:215</span>
-              </div>
+              <a class="photo__like-link" href="#">
+                <span class="photo__like-icon"></span>
+                <span class="photo__like-number">Нравится:215</span>
+              </a>
             </div>
-          </article>
-          <article class="photo__item">
-            <img src="http://placehold.it/150x100">
+          </li>
+          <li class="photo__item">
+            <a class="photo__link" href="#">
+              <img src="http://placehold.it/150x100">
+            </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
-                <cite class="photo__author-name">Левон</cite>
+                <a class="photo__author-name" href="#">Левон</a>
                 <span class="photo__text">(5 часов назад)</span>
               </div>
               <blockquote class="photo__author-text">Вчера он на луну летал, сегодня в руки к нам попал.</blockquote>
-              <div class="photo__like">
-                <a class="photo__like-link" href="#"></a>
-                <span class="photo-like__number">Нравится:356</span>
-              </div>
+              <a class="photo__like-link" href="#">
+                <span class="photo__like-icon"></span>
+                <span class="photo__like-number">Нравится:356</span>
+              </a>
             </div>
-          </article>
-          <article class="photo__item">
-            <img src="http://placehold.it/150x100">
+          </li>
+          <li class="photo__item">
+            <a class="photo__link" href="#">
+              <img src="http://placehold.it/150x100">
+            </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
-                <cite class="photo__author-name">Антон</cite>
+                <a class="photo__author-name" href="#">Антон</a>
                 <span class="photo__text">(12 часов назад)</span>
               </div>
               <blockquote class="photo__author-text">Соседи будут рады!</blockquote>
-              <div class="photo__like">
-                <a class="photo__like-link" href="#"></a>
-                <span class="photo-like__number">Нравится:666</span>
-              </div>
+              <a class="photo__like-link" href="#">
+                <span class="photo__like-icon"></span>
+                <span class="photo__like-number">Нравится:666</span>
+              </a>
             </div>
-          </article>
-          <article class="photo__item">
-            <img src="http://placehold.it/150x100">
+          </li>
+          <li class="photo__item">
+            <a class="photo__link" href="#">
+              <img src="http://placehold.it/150x100">
+            </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
-                <cite class="photo__author-name">Борис</cite>
+                <a class="photo__author-name" href="#">Борис</a>
                 <span class="photo__text">(20 часов назад)</span>
               </div>
               <blockquote class="photo__author-text">Здесь могла быть ваша цитата о высоком и вечном.</blockquote>
-              <div class="photo__like">
-                <a class="photo__like-link" href="#"></a>
-                <span class="photo-like__number">Нравится:215</span>
-              </div>
+              <a class="photo__like-link" href="#">
+                <span class="photo__like-icon"></span>
+                <span class="photo__like-number">Нравится:215</span>
+              </a>
             </div>
-          </article>
-          <article class="photo__item">
-            <img src="http://placehold.it/150x100">
+          </li>
+          <li class="photo__item">
+            <a class="photo__link" href="#">
+              <img src="http://placehold.it/150x100">
+            </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
-                <cite class="photo__author-name">Сергей</cite>
+                <a class="photo__author-name" href="#">Сергей</a>
                 <span class="photo__text">(25 часов назад)</span>
               </div>
               <blockquote class="photo__author-text">Самая кубанская в мире!</blockquote>
-              <div class="photo__like">
-                <a class="photo__like-link" href="#"></a>
-                <span class="photo-like__number">Нравится:4</span>
-              </div>
+              <a class="photo__like-link" href="#">
+                <span class="photo__like-icon"></span>
+                <span class="photo__like-number">Нравится:4</span>
+              </a>
             </div>
-          </article>
-          <article class="photo__item">
-            <img src="http://placehold.it/150x100">
+          </li>
+          <li class="photo__item">
+            <a class="photo__link" href="#">
+              <img src="http://placehold.it/150x100">
+            </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
-                <cite class="photo__author-name">Максим</cite>
+                <a class="photo__author-name" href="#">Максим</a>
                 <span class="photo__text">(40 часов назад)</span>
               </div>
               <blockquote class="photo__author-text">Где снег-то?</blockquote>
-              <div class="photo__like">
-                <a class="photo__like-link" href="#"></a>
-                <span class="photo-like__number">Нравится:150</span>
-              </div>
+              <a class="photo__like-link" href="#">
+                <span class="photo__like-icon"></span>
+                <span class="photo__like-number">Нравится:150</span>
+              </a>
             </div>
-          </article>
-          <article class="photo__item">
-            <img src="http://placehold.it/150x100">
+          </li>
+          <li class="photo__item">
+            <a class="photo__link" href="#">
+              <img src="http://placehold.it/150x100">
+            </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
-                <cite class="photo__author-name">Надежда</cite>
+                <a class="photo__author-name" href="#">Надежда</a>
                 <span class="photo__text">(45 часов назад)</span>
               </div>
               <blockquote class="photo__author-text">Всем GM и взаимные лайки!</blockquote>
-              <div class="photo__like">
-                <a class="photo__like-link" href="#"></a>
-                <span class="photo-like__number">Нравится:2560</span>
-              </div>
+              <a class="photo__like-link" href="#">
+                <span class="photo__like-icon"></span>
+                <span class="photo__like-number">Нравится:2560</span>
+              </a>
             </div>
-          </article>
-        </div>
+          </li>
+        </ul>
       </section>
       <section class="appeal">
         <p class="appeal__text">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</p>
       </section>
       <section class="photo-post">
-        <div class="photo-post__wrapper">
+        <form class="photo-post__form" action="https://echo.htmlacademy.ru" method="post">
           <img src="http://placehold.it/150x100">
-          <div class="photo-post__settings settings">
-            <div class="settings__controls">
-              <div class="settings__control">
-                <button class="settings__btn settings__btn--crop" type="button"></button>
+          <div class="photo-post__form-settings settings">
+            <ul class="settings__list">
+              <li class="settings__item">
+                <input class="settings__control settings__control--crop" name="crop">
                 <div class="settings__range settings__range--tablet">
                   <div class="settings__scale"></div>
                   <button class="settings__toggle"><span class="visually-hidden">Регулировка</span></button>
                 </div>
-              </div>
-              <div class="settings__control">
-                <button class="settings__btn settings__btn--fill" type="button"></button>
+              </li>
+              <li class="settings__item">
+                <input class="settings__control settings__control--fill" name="fill">
                 <div class="settings__range settings__range--tablet">
                   <div class="settings__scale"></div>
                   <button class="settings__toggle"><span class="visually-hidden">Регулировка</span></button>
                 </div>
-              </div>
-              <div class="settings__control">
-                <button class="settings__btn settings__btn--grey" type="button"></button>
+              </li>
+              <li class="settings__item">
+                <input class="settings__control settings__control--grey" name="grey">
                 <div class="settings__range settings__range--tablet">
                   <div class="settings__scale"></div>
                   <button class="settings__toggle"><span class="visually-hidden">Регулировка</span></button>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
             <div class="settings__range settings__range--mobile">
               <div class="settings__scale"></div>
               <button class="settings__toggle"><span class="visually-hidden">Регулировка</span></button>
             </div>
           </div>
           <div class="photo-post__buttons">
-            <button class="photo-post__btn" type="button">Запостить</button>
+            <button class="photo-post__btn" type="submit">Запостить</button>
             <button class="photo-post__btn photo-post__btn--no">Отмена</button>
           </div>
-        </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
