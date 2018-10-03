@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML ACADEMY: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-img" src="img/logotype-white-mobile" width="75" height="22" alt="pink">
+        <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
@@ -16,35 +17,38 @@
             <a class="site-list__link" href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Конкурс</a>
+            <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
-      <div class="page-header__download download">
-        <a class="download__application" href="#">Скачать приложение</a>
-        <ul class="download__list-link">
-          <li class="download__item">
-            <a class="download__link download__link--aplle" href="#"><span class="visually-hidden">apple</span></a>
-          </li>
-          <li class="download__item">
-            <a class="download__link download__link--android" href="#"><span class="visually-hidden">android</span></a>
-          </li>
-          <li class="download__item">
-            <a class="download__link download__link--microsoft" href="#"><span class="visually-hidden">microsoft</span></a>
-          </li>
-        </ul>
-        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
+      <section class="page-header__promo">
+        <div class="page-header__bg"></div>
+        <div class="page-header__download download">
+          <a class="download__application" href="#">Скачать приложение</a>
+          <ul class="download__list-link">
+            <li class="download__item">
+              <a class="download__link download__link--aplle" href="#"><span class="visually-hidden">apple</span></a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--android" href="#"><span class="visually-hidden">android</span></a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--microsoft" href="#"><span class="visually-hidden">microsoft</span></a>
+            </li>
+          </ul>
+          <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
     </header>
     <main class="page-main">
       <h1 class="page-title1">
-        <span class="page-title1__slogan">Устали от серости мегаполиса?</span>
+        <span class="page-title1__slogan page-title1__slogan--question">Устали от серости мегаполиса?</span>
         <span class="page-title1__slogan">Нам есть, что вам предложить!</span>
       </h1>
       <section class="features">
@@ -69,7 +73,7 @@
           <ul class="review__list slider">
             <li class="review__item slider__item">
               <cite class="review__author-name">Николай Петров</cite>
-              <blockquote class="reivew__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+              <blockquote class="review__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
             </li>
             <!--временно-->
             <li class="review__item slider__item">
@@ -183,7 +187,7 @@
     <footer class="page-footer">
       <section class="page-footer__contacts contacts-group">
         <p class="contacts-group__header">
-          <span>Остались вопросы?</span>
+          <span class="contacts-group__appeal">Остались вопросы?</span>
           <span>Свяжитесь с нами!</span>
         </p>
         <div class="contacts-group__wrapper">
