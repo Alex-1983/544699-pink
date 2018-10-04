@@ -3,44 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML ACADEMY: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
   <body class="page">
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-img" src="img/logotype-white-mobile" width="75" height="22" alt="pink">
+        <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Конкурс</a>
+            <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
-      <section class="intro">
-        <div class="page-title1__wrapper">
-          <h1 class="page-title1">Фотографии пользователей</h1>
-        </div>
-      </section>
+      <div class="page__title1-wrapper">
+          <h1 class="page__title1 page__title1--white">Фотографии пользователей</h1>
+      </div>
     </header>
     <main class="page-main">
       <div class="appeal">
-        <p class="appeal__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <p class="appeal__text"><span class="appeal__text-phrase">Взгляните на фотографии, которые выкладывают пользователи!</span>Видите, как не хватает ваших?</p>
       </div>
       <section class="photo">
         <ul class="photo__list">
-          <li class="photo__item">
+          <li class="photo__item photo__item--panorama">
             <a class="photo__link" href="#">
-              <img src="http://placehold.it/150x100">
+              <img class="photo__img photo__img--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
             </a>
             <span class="photo__hit">Панорама дня</span>
             <div class="photo__wrapper-inner">
@@ -57,7 +56,7 @@
           </li>
           <li class="photo__item">
             <a class="photo__link" href="#">
-              <img src="http://placehold.it/150x100">
+              <img class="photo__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Машина">
             </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
@@ -73,7 +72,7 @@
           </li>
           <li class="photo__item">
             <a class="photo__link" href="#">
-              <img src="http://placehold.it/150x100">
+              <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабаны">
             </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
@@ -89,7 +88,7 @@
           </li>
           <li class="photo__item">
             <a class="photo__link" href="#">
-              <img src="http://placehold.it/150x100">
+              <img class="photo__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Окно">
             </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
@@ -105,7 +104,7 @@
           </li>
           <li class="photo__item">
             <a class="photo__link" href="#">
-              <img src="http://placehold.it/150x100">
+              <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Кубанская бухча">
             </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
@@ -121,7 +120,7 @@
           </li>
           <li class="photo__item">
             <a class="photo__link" href="#">
-              <img src="http://placehold.it/150x100">
+              <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Максим">
             </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
@@ -137,7 +136,7 @@
           </li>
           <li class="photo__item">
             <a class="photo__link" href="#">
-              <img src="http://placehold.it/150x100">
+              <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Авиалайнер">
             </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
@@ -154,11 +153,11 @@
         </ul>
       </section>
       <section class="appeal">
-        <p class="appeal__text">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="appeal__text"><span class="appeal__text--phrase">Затмите их всех!</span>Выкладывайте все, что накопилось в телефоне!</p>
       </section>
       <section class="photo-post">
         <form class="photo-post__form" action="https://echo.htmlacademy.ru" method="post">
-          <img src="http://placehold.it/150x100">
+          <img class="photo-post__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Дорога">
           <div class="photo-post__form-settings settings">
             <ul class="settings__list">
               <li class="settings__item">
@@ -197,7 +196,10 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="logo" href="#"><span class="visually-hidden">Pink</span></a>
+        <a class="page-footer__logo" href="#">
+          <span class="visually-hidden">Pink</span>
+          <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип">
+        </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

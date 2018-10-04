@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML ACADEMY: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
   <body class="page">
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-img" src="img/logotype-white-mobile" width="75" height="22" alt="pink">
+        <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">Конкурс</a>
@@ -26,11 +27,9 @@
           </li>
         </ul>
       </nav>
-      <section class="intro">
-        <div class="page-title1__wrapper">
-          <h1 class="page-title1">Конкурс на самое безбашенное путешествие с Пинк</h1>
-        </div>
-      </section>
+      <div class="page__title1-wrapper">
+        <h1 class="page__title1 page__title1--white">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </header>
     <main class="page-main">
       <div class="appeal">
@@ -39,7 +38,7 @@
       <section class="form-Pink">
         <div class="container">
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset>
+            <fieldset class="form__registration-wrapper">
               <h2 class="visually-hidden">Представьтесь:</h2>
               <div class="form__registration">
                 <p class="form__registration-item">
@@ -56,36 +55,36 @@
                 </p>
               </div>
             </fieldset>
-            <fieldset>
-              <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
-              <div class="form__checkbox-group">
-                <p class="form__checkbox-item">
-                  <input class="visually-hidden form__checkbox-input" id="selfie" type="checkbox" name="selfie" checked>
-                  <label class="form__checkbox-label" for="selfie">Сделал селфи с акулой</label>
+            <fieldset class="checkbox__wrapper">
+              <h2 class="checkbox__title">Ваши безбашенные достижения в путешествии</h2>
+              <div class="checkbox">
+                <p class="checkbox__item">
+                  <input class="visually-hidden checkbox__input" id="selfie" type="checkbox" name="selfie" checked>
+                  <label class="checkbox__label" for="selfie">Сделал селфи с акулой</label>
                 </p>
-                <p class="form__checkbox-item">
-                  <input class="visually-hidden form__checkbox-input" id="beach" type="checkbox" name="beach" checked>
-                  <label class="form__checkbox-label" for="beach">Обгорел на пляже</label>
+                <p class="checkbox__item">
+                  <input class="visually-hidden checkbox__input" id="beach" type="checkbox" name="beach" checked>
+                  <label class="checkbox__label" for="beach">Обгорел на пляже</label>
                 </p>
-                <p class="form__checkbox-item">
-                  <input class="visually-hidden form__checkbox-input" id="chuck-norris" type="checkbox" name="chuck-norris">
-                  <label class="form__checkbox-label" for="chuck-norris">Видел Чака Норриса</label>
+                <p class="checkbox__item">
+                  <input class="visually-hidden checkbox__input" id="chuck-norris" type="checkbox" name="chuck-norris">
+                  <label class="checkbox__label" for="chuck-norris">Видел Чака Норриса</label>
                 </p>
-                <p class="form__checkbox-item">
-                  <input class="visually-hidden form__checkbox-input" id="souvenirs" type="checkbox" name="souvenirs">
-                  <label class="form__checkbox-label" for="souvenirs">Накупил сувениров</label>
+                <p class="checkbox__item">
+                  <input class="visually-hidden checkbox__input" id="souvenirs" type="checkbox" name="souvenirs">
+                  <label class="checkbox__label" for="souvenirs">Накупил сувениров</label>
                 </p>
-                <p class="form__checkbox-item">
-                  <input class="visually-hidden form__checkbox-input" id="held-tower" type="checkbox" name="held-tower" checked>
-                  <label class="form__checkbox-label" for="held-tower">Удержал башню</label>
+                <p class="checkbox__item">
+                  <input class="visually-hidden checkbox__input" id="held-tower" type="checkbox" name="held-tower" checked>
+                  <label class="checkbox__label" for="held-tower">Удержал башню</label>
                 </p>
-                <p class="form__checkbox-item">
-                  <input class="visually-hidden form__checkbox-input" id="trashed-hotel" type="checkbox" name="trashed-hotel">
-                  <label class="form__checkbox-label" for="trashed-hotel">Разгромил отель</label>
+                <p class="checkbox__item">
+                  <input class="visually-hidden checkbox__input" id="trashed-hotel" type="checkbox" name="trashed-hotel">
+                  <label class="checkbox__label" for="trashed-hotel">Разгромил отель</label>
                 </p>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="form__contacts-wrapper">
               <h2 class="visually-hidden">Контактная информация</h2>
               <div class="form__contacts">
                 <p class="form__contacts-item">
@@ -98,24 +97,24 @@
                 </p>
               </div>
             </fieldset>
-            <fieldset>
-              <h2 class="form__title">С каким приложением путешествовали?</h2>
-              <div class="form__radio-group">
-                <p class="form__radio-item">
-                  <input class="visually-hidden form__radio-input" id="iOS" type="radio" name="radio" checked>
-                  <label class="form__radio-label" for="iOS">Pink для iOS</label>
+            <fieldset class="radio-wrapper">
+              <h2 class="radio__title">С каким приложением путешествовали?</h2>
+              <div class="radio">
+                <p class="radio__item">
+                  <input class="visually-hidden radio-input" id="iOS" type="radio" name="radio" checked>
+                  <label class="radio__label" for="iOS">Pink для iOS</label>
                 </p>
-                <p class="form__radio-item">
-                  <input class="visually-hidden form__radio-input" id="Android" type="radio" name="radio">
-                  <label class="form__radio-label" for="Android">Pink на Android</label>
+                <p class="radio__item">
+                  <input class="visually-hidden radio-input" id="Android" type="radio" name="radio">
+                  <label class="radio__label" for="Android">Pink на Android</label>
                 </p>
-                <p class="form__radio-item">
-                  <input class="visually-hidden form__radio-input" id="windows-phone" type="radio" name="radio">
-                  <label class="form__radio-label" for="windows-phone">Windows Phone</label>
+                <p class="radio__item">
+                  <input class="visually-hidden radio__input" id="windows-phone" type="radio" name="radio">
+                  <label class="radio__label" for="windows-phone">Windows Phone</label>
                 </p>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="form__textarea-wrapper">
               <div class="form__textarea">
                 <h2 class="form__title">Опишите свои эмоции</h2>
                 <textarea class="form__control" id="textarea" name="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -123,7 +122,7 @@
             </fieldset>
             <div class="form__btn-container">
                 <button class="form__button" type="submit">Отправить форму</button>
-                <p class="form__text">* — обязательные поля</p>
+                <p class="form__text"><sup class="form__text-sup">*</sup> — обязательные поля</p>
             </div>
           </form>
         </div>
