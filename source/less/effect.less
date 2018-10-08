@@ -6,27 +6,8 @@
 @media (min-width: @tablet-width) {
   .effect {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 60px 3% 60px;
-
-    &::before {
-      content: "24";
-      display: block;
-      margin: 0 auto;
-
-
-      width: 202px;
-      height: 202px;
-
-      font-size: 105px;
-      line-height: 180px;
-      color: #d22856;
-      text-align: center;
-
-
-      border-radius: 50%;
-      border: 14px solid #d22856;
-    }
   }
 }
 
@@ -36,8 +17,39 @@
   }
 }
 
-.effect__inner {
-  width: 47%;
+@media (min-width: @tablet-width) {
+  .effect__inner {
+    position: relative;
+    padding-left: 50%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 238px;
+      height: 276px;
+      background-image: url("../img/icon-timer-tablet.svg");
+    }
+
+    &::after {
+      content: "24";
+      position: absolute;
+      top: 55px;
+      left: 18px;
+
+      width: 202px;
+      height: 202px;
+
+      font-size: 105px;
+      line-height: 180px;
+      color: #d22856;
+      text-align: center;
+
+      border-radius: 50%;
+      border: 14px solid #d22856;
+    }
+  }
 }
 
 .effect__title {
