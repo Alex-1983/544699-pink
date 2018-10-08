@@ -1,6 +1,6 @@
 // out:null
 .price {
-  padding: 65px 6.25% 100px;
+  padding: 65px 0 100px;
 
   background-color: @bg-gray;
 
@@ -8,19 +8,142 @@
   border: 1px solid red;
 }
 
+@media (min-width: @tablet-width) {
+  .price {
+    padding: 35px 3% 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price {
+    padding: 55px 120px 95px;
+  }
+}
+
+.price__wripper {
+  overflow: hidden;
+}
+
 .price__table {
-  display: flex;
-  justify-content: center;
+  min-width: 265%;
+
+  border-collapse: collapse;
 }
 
-.price__row-1 {
-  background-color: @bg-blue;
+@media (min-width: @tablet-width) {
+  .price__table {
+    margin: 0 auto;
+
+    width: 620px;
+  }
 }
 
-.price__purchase {
+@media (min-width: @desktop-width) {
+  .price__table {
+    width: 940px;
+  }
+}
+
+.price__th-transparent {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .price__th-transparent {
+    display: block;
+  }
+}
+
+.price__cell-tablet {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .price__cell-tablet {
+    display: block;
+
+    padding: 20px;
+
+    border-left: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+  }
+}
+
+.price__cell-tablet--top {
+  border-top: 2px solid #e5e5e5;
+}
+
+.price__cell {
+  padding: 20px;
+  padding-left: 5%;
+
+  text-transform: uppercase;
+
+  border: 2px solid #e5e5e5;
+}
+
+@media (min-width: @tablet-width) {
+  .price__cell {
+    color: transparent;
+    font-size: 0;
+  }
+}
+
+.price__cell-icon {
+  position: relative;
+}
+
+.price__cell-icon::after {
+  content: "";
+  position: absolute;
+  right: 6.25%;
+}
+
+@media (min-width: @tablet-width) {
+  .price__cell-icon::after {
+    right: 50%;
+
+    background-repeat: no-repeat;
+  }
+}
+
+.price__cell-icon--yes::after {
+  top: 25px;
+
+  .size(21px, 16px);
+
+  background-image: url("../img/icon-yes.svg");
+}
+
+.price__cell-icon--no::after {
+  top: 20px;
+
+  .size(26px, 26px);
+
+  background-image: url("../img/icon-no.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .price__table {
+    min-width: 620px;
+  }
+}
+
+.price__package {
   line-height: 30px;
   color: @bg-white;
   text-transform: uppercase;
+}
+
+.price__th {
+  background-color: @bg-blue;
+}
+
+@media (min-width: @tablet-width) {
+  .price__th--hit {
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+  }
 }
 
 .price__hit-package {
@@ -42,7 +165,8 @@
   font-size: 24px;
 }
 
-.price__col-1 {
-  line-height: 30px;
-  text-transform: uppercase;
+@media (min-width: @tablet-width) {
+  .price__toggles {
+    display: none;
+  }
 }

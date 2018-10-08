@@ -6,6 +6,24 @@
   background-color: @bg-gray;
 }
 
+@media (min-width: @tablet-width) {
+  .checkbox__wrapper {
+    width: 100%;
+    order: 4;
+
+    /*временно*/
+    height: 550px;
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .checkbox__wrapper {
+    /*временно*/
+    height: 300px;
+  }
+}
+
 .checkbox__item {
   margin: 0;
   padding: 0;
