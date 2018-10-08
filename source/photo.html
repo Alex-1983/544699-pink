@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>HTML ACADEMY: Пинк</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML ACADEMY: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
   <body class="page">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="page__title1-wrapper">
+      <div class="container">
+        <div class="main-nav__item">
+          <a class="page-header__logo">
+            <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="pink">
+          </a>
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page__title1-wrapper">
           <h1 class="page__title1 page__title1--white">Фотографии пользователей</h1>
+        </div>
       </div>
     </header>
     <main class="page-main">
-      <div class="appeal">
+      <div class="appeal container">
         <p class="appeal__text"><span class="appeal__text-phrase">Взгляните на фотографии, которые выкладывают пользователи!</span>Видите, как не хватает ваших?</p>
       </div>
-      <section class="photo">
+      <section class="photo container">
         <ul class="photo__list">
           <li class="photo__item photo__item--panorama">
-            <a class="photo__link" href="#">
+            <a class="photo__link photo__link--panorama" href="#">
               <img class="photo__img photo__img--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
             </a>
             <span class="photo__hit">Панорама дня</span>
-            <div class="photo__wrapper-inner">
+            <div class="photo__wrapper-inner photo__wrapper--panorama">
               <div class="photo__name">
                 <a class="photo__author-name" href="#">Анна</a>
                 <span class="photo__text">(5 минут назад)</span>
@@ -152,30 +159,33 @@
           </li>
         </ul>
       </section>
-      <section class="appeal">
+      <section class="appeal container">
         <p class="appeal__text"><span class="appeal__text--phrase">Затмите их всех!</span>Выкладывайте все, что накопилось в телефоне!</p>
       </section>
-      <section class="photo-post">
+      <section class="photo-post container">
         <form class="photo-post__form" action="https://echo.htmlacademy.ru" method="post">
           <img class="photo-post__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Дорога">
           <div class="photo-post__form-settings settings">
             <ul class="settings__list">
               <li class="settings__item">
-                <input class="settings__control settings__control--crop" name="crop">
+                <input class="visually-hidden settings__control" id="crop-icon" name="crop">
+                <label class="settings__label settings__label--crop" for="crop-icon"></label>
                 <div class="settings__range settings__range--tablet">
                   <div class="settings__scale"></div>
                   <button class="settings__toggle"><span class="visually-hidden">Регулировка</span></button>
                 </div>
               </li>
               <li class="settings__item">
-                <input class="settings__control settings__control--fill" name="fill">
+                <input class="visually-hidden settings__control" id="fill-icon" name="fill">
+                <label class="settings__label settings__label--fill" for="fill-icon"></label>
                 <div class="settings__range settings__range--tablet">
                   <div class="settings__scale"></div>
                   <button class="settings__toggle"><span class="visually-hidden">Регулировка</span></button>
                 </div>
               </li>
               <li class="settings__item">
-                <input class="settings__control settings__control--grey" name="grey">
+                <input class="visually-hidden settings__control" id="contrast-icon" name="grey">
+                <label class="settings__label settings__label--contrast" for="contrast-icon"></label>
                 <div class="settings__range settings__range--tablet">
                   <div class="settings__scale"></div>
                   <button class="settings__toggle"><span class="visually-hidden">Регулировка</span></button>
@@ -184,18 +194,19 @@
             </ul>
             <div class="settings__range settings__range--mobile">
               <div class="settings__scale"></div>
-              <button class="settings__toggle"><span class="visually-hidden">Регулировка</span></button>
+              <button class="btn settings__toggle"><span class="visually-hidden">Регулировка</span></button>
             </div>
-          </div>
+
           <div class="photo-post__buttons">
-            <button class="photo-post__btn" type="submit">Запостить</button>
-            <button class="photo-post__btn photo-post__btn--no">Отмена</button>
+            <button class="btn photo-post__btn" type="submit">Запостить</button>
+            <button class="btn photo-post__btn photo-post__btn--no">Отмена</button>
+          </div>
           </div>
         </form>
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
+    <footer class="page-footer container">
+      <div class="page-footer__inner">
         <a class="page-footer__logo" href="#">
           <span class="visually-hidden">Pink</span>
           <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип">
