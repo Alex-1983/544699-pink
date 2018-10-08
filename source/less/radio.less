@@ -6,6 +6,24 @@
   background-color: @bg-gray;
 }
 
+@media (min-width: @tablet-width) {
+  .radio-wrapper {
+    width: 100%;
+    order: 2;
+
+    /*временно*/
+    height: 300px;
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .radio-wrapper {
+    width: 385px;
+    margin-left: auto;
+  }
+}
+
 .radio__item {
   margin: 0;
   padding: 0;
