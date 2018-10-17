@@ -1,4 +1,14 @@
 // out:null
+.copyright {
+  @media (min-width: @tablet-width) {
+    width: 132px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 155px;
+  }
+}
+
 .copyright__text {
   font-weight: 400;
 
@@ -18,6 +28,7 @@
   padding-top: 5px;
 
   @media (min-width: @tablet-width) {
+    margin-left: 10px;
     padding: 0;
     padding-top: 8px;
   }

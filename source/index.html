@@ -5,6 +5,7 @@
     <title>HTML ACADEMY: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
@@ -78,29 +79,39 @@
           </ul>
         </div>
       </nav>
-      <section class="page-header__promo">
-        <div class="page-header__bg"></div>
-        <div class="page-header__container">
-          <div class="page-header__download download">
-            <span class="download__heading">Взгляните на жизнь иначе!</span>
-            <a class="download__application" href="#">Скачать приложение</a>
-            <ul class="download__list-link">
-              <li class="download__item">
-                <a class="download__link download__link--aplle" href="#"><span class="visually-hidden">apple</span></a>
-              </li>
-              <li class="download__item">
-                <a class="download__link download__link--android" href="#"><span class="visually-hidden">android</span></a>
-              </li>
-              <li class="download__item">
-                <a class="download__link download__link--microsoft" href="#"><span class="visually-hidden">microsoft</span></a>
-              </li>
-            </ul>
-            <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </header>
+    <main class="page-main">
+      <section class="intro">
+        <div class="intro__container">
+          <div class="intro__promo">
+            <div class="intro__promo-img">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png">
+                <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png">
+                <img src="img/iphone-hand-mobile@1x.png" alt="pink">
+              </picture>
+            </div>
+          </div>
+          <div class="download">
+            <div class="download__wrapper">
+              <span class="download__heading">Взгляните на жизнь иначе!</span>
+              <a class="download__application" href="#">Скачать приложение</a>
+              <ul class="download__list-link">
+                <li class="download__item">
+                  <a class="download__link download__link--aplle" href="#"><span class="visually-hidden">apple</span></a>
+                </li>
+                <li class="download__item">
+                  <a class="download__link download__link--android" href="#"><span class="visually-hidden">android</span></a>
+                </li>
+                <li class="download__item">
+                  <a class="download__link download__link--microsoft" href="#"><span class="visually-hidden">microsoft</span></a>
+                </li>
+              </ul>
+              <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
           </div>
         </div>
       </section>
-    </header>
-    <main class="page-main">
       <h1 class="page__title1">
         <span class="page__title1-slogan page__title1-slogan--question">Устали от серости мегаполиса?</span>
         <span class="page__title1-slogan">Нам есть, что вам предложить!</span>

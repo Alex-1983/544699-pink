@@ -1,0 +1,125 @@
+// out:null
+.intro {
+  position: relative;
+  z-index: 1;
+
+  background-color: @bg-blue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 700px auto;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: 1200px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: 2560px auto;
+  }
+}
+
+.intro__container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -66px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -110px;
+    padding: 204px 0 60px;
+
+    width: 93.9%;
+
+    min-height: 730px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    min-height: 853px;
+  }
+}
+
+.intro__promo {
+  position: relative;
+
+  padding-top: 67px;
+
+  min-height: 462px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    padding: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 700px;
+    height: 545px;
+
+    z-index: 1;
+  }
+}
+
+.intro__promo-img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 258px;
+  height: 286px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    left: 18px;
+    top: auto;
+
+    width: 700px;
+    height: 545px;
+
+    z-index: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -385px;
+
+    .size(1050px, 645px);
+  }
+}
+
+.intro__title-wrapper {
+  margin-top: -66px;
+  padding: 86px 20px 20px;
+
+  min-height: 237px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -110px;
+
+    min-height: 238px;
+  }
+}
+
+.intro__title {
+  margin: 0;
+  padding: 10px 20px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: @bg-white;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 95px 40px 60px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 88px 100px 80px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
