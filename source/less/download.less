@@ -1,52 +1,60 @@
 // out:null
 .download {
-  padding: 30px 6.25% 35px;
+  position: relative;
+  z-index: 2;
+  padding: 28px 20px 28px;
 
   background-color: #1d2631;
 
-  /*временно*/
-  border: 1px solid red;
-}
-
-@media (min-width: @tablet-width) {
-  .download {
+  @media (min-width: @tablet-width) {
     padding: 0;
 
-    width: 45%;
+    width: 300px;
 
     background-color: transparent;
-    border: 1px solid red;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+
+    width: 300px;
+
+    background-color: transparent;
+  }
+}
+
+.download__wrapper {
+  @media (min-width: @desktop-width) {
+    margin-left: 10px;
+    padding-top: 15px;
   }
 }
 
 .download__heading {
   display: none;
-}
 
-@media (min-width: @tablet-width) {
-  .download__heading {
+  @media (min-width: @tablet-width) {
     display: block;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
     width: 200px;
 
     font-weight: 300;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 48px;
     color: @bg-white;
     text-align: center;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .download__heading {
-    margin-bottom: 60px;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 50px;
+    padding-left: 7px;
 
     width: 240px;
 
     font-size: 50px;
-    line-height: 50px;
+    line-height: 60px;
   }
 }
 
@@ -54,7 +62,7 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
-  padding: 15px 35px;
+  padding: 15px 35px 16px;
 
   width: 280px;
 
@@ -67,21 +75,25 @@
 
   border: 3px solid @bg-white;
   border-radius: 30px;
-}
 
-@media (min-width: @tablet-width) {
-  .download__application {
+  &:hover {
+    background-color: #ffffff;
+    color: @bg-pink;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
     margin-bottom: 40px;
 
     width: 300px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .download__application {
+  @media (min-width: @desktop-width) {
     margin-bottom: 65px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 13px 25px;
 
     font-size: 21px;
     line-height: @line-height;
@@ -95,29 +107,26 @@
   flex-wrap: wrap;
 
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
-  width: 215px;
-}
+  width: 225px;
 
-@media (min-width: @tablet-width) {
-  .download__list-link {
-    margin-bottom: 40px;
+  @media (min-width: @tablet-width) {
+
+    margin-bottom: 33px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .download__list-link {
-    margin-bottom: 60px;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 48px;
   }
 }
 
 .download__item {
-  margin-right: 10px;
-}
+  margin-right: 15px;
 
-.download__item:nth-child(3n) {
-  margin-right: 0;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .download__link {
@@ -125,37 +134,60 @@
   margin: 0;
   padding: 0;
 
-  width: 65px;
+  width: 64px;
   height: 65px;
-}
 
-.download__link--aplle {
-  background-image: url("../img/logo-apple.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+  &--aplle {
+    background-image: url("../img/logo-apple.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
 
-.download__link--android {
-  background-image: url("../img/logo-android.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+    @media (min-width: @tablet-width) {
+      background-position: 10px 5px;
+    }
 
-.download__link--microsoft {
-  background-image: url("../img/logo-microsoft.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+    @media (min-width: @desktop-width) {
+      background-position: 15px 2px;
+    }
+  }
+
+  &--android {
+    background-image: url("../img/logo-android.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (min-width: @tablet-width) {
+      background-position: 14px 12px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-position: 17px 10px;
+    }
+  }
+
+  &--microsoft {
+    background-image: url("../img/logo-microsoft.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (min-width: @tablet-width) {
+      background-position: 13px 17px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-position: 18px 13px;
+    }
+  }
 }
 
 .download__text {
   margin: 0;
   padding: 0;
 
+  color: @bg-white;
   text-align: center;
-}
 
-@media (min-width: @tablet-width) {
-  .download__text {
+  @media (min-width: @tablet-width) {
     margin: 0 auto;
     width: 300px;
 
