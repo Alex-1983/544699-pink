@@ -82,7 +82,7 @@
     </header>
     <main class="page-main">
       <section class="intro">
-        <div class="intro__title-wrapper">
+        <div class="intro__title-wrapper intro__title-wrapper--photo">
           <h1 class="intro__title">Фотографии пользователей</h1>
         </div>
       </section>
@@ -90,27 +90,35 @@
         <div class="photo__header">
           <p class="photo__header-text"><span class="photo__header-text--phrase">Взгляните на фотографии, которые выкладывают пользователи!</span> Видите, как не хватает ваших?</p>
         </div>
-        <ul class="photo__list">
-          <li class="photo__item photo__item--panorama">
-            <a class="photo__link photo__link--panorama" href="#">
-              <img class="photo__img photo__img--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="300" alt="Панорама дня">
-            </a>
-            <span class="photo__hit">Панорама дня</span>
-            <div class="photo__wrapper-inner photo__wrapper-inner--panorama">
-              <div class="photo__name">
-                <a class="photo__author-name" href="#">Анна</a>
-                <span class="photo__text">(5 минут назад)</span>
-              </div>
-              <blockquote class="photo__author-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
-              <a class="photo__like-link" href="#">
-                <span class="photo__like-icon"></span>
-                <span class="photo__like-number">Нравится:215</span>
-              </a>
+        <figure class="photo__item photo__item--panorama">
+          <a class="photo__link photo__link-panorama" href="#">
+            <picture class="photo__link-img">
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="photo__img photo__img--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"alt="Панорама дня">
+            </picture>
+          </a>
+          <span class="photo__hit">Панорама дня</span>
+          <div class="photo__wrapper-inner photo__wrapper-inner--panorama">
+            <div class="photo__name">
+              <a class="photo__author-name" href="#">Анна</a>
+              <span class="photo__text">(5 минут назад)</span>
             </div>
-          </li>
-          <li class="photo__item">
+            <blockquote class="photo__author-text photo__author-text--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
+            <a class="photo__like-link" href="#">
+              <span class="photo__like-icon"></span>
+              <span class="photo__like-number">Нравится: 215</span>
+            </a>
+          </div>
+        </figure>
+        <div class="photo__list">
+          <figure class="photo__item">
             <a class="photo__link" href="#">
-              <img class="photo__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Машина">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"  alt="Машина">
+              </picture>
             </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
@@ -120,13 +128,17 @@
               <blockquote class="photo__author-text">Вчера он на луну летал, сегодня в руки к нам попал.</blockquote>
               <a class="photo__like-link" href="#">
                 <span class="photo__like-icon"></span>
-                <span class="photo__like-number">Нравится:356</span>
+                <span class="photo__like-number">Нравится: 356</span>
               </a>
             </div>
-          </li>
-          <li class="photo__item">
+          </figure>
+          <figure class="photo__item">
             <a class="photo__link" href="#">
-              <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабаны">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабаны">
+              </picture>
             </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
@@ -136,13 +148,17 @@
               <blockquote class="photo__author-text">Соседи будут рады!</blockquote>
               <a class="photo__like-link" href="#">
                 <span class="photo__like-icon"></span>
-                <span class="photo__like-number">Нравится:666</span>
+                <span class="photo__like-number">Нравится: 666</span>
               </a>
             </div>
-          </li>
-          <li class="photo__item">
+          </figure>
+          <figure class="photo__item">
             <a class="photo__link" href="#">
-              <img class="photo__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Окно">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Окно">
+              </picture>
             </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
@@ -152,13 +168,17 @@
               <blockquote class="photo__author-text">Здесь могла быть ваша цитата о высоком и вечном.</blockquote>
               <a class="photo__like-link" href="#">
                 <span class="photo__like-icon"></span>
-                <span class="photo__like-number">Нравится:215</span>
+                <span class="photo__like-number">Нравится: 215</span>
               </a>
             </div>
-          </li>
-          <li class="photo__item">
+          </figure>
+          <figure class="photo__item">
             <a class="photo__link" href="#">
-              <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Кубанская бухча">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Кубанская бухча">
+              </picture>
             </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
@@ -168,13 +188,17 @@
               <blockquote class="photo__author-text">Самая кубанская в мире!</blockquote>
               <a class="photo__like-link" href="#">
                 <span class="photo__like-icon"></span>
-                <span class="photo__like-number">Нравится:4</span>
+                <span class="photo__like-number">Нравится: 4</span>
               </a>
             </div>
-          </li>
-          <li class="photo__item">
+          </figure>
+          <figure class="photo__item">
             <a class="photo__link" href="#">
-              <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Максим">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Максим">
+              </picture>
             </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
@@ -184,13 +208,17 @@
               <blockquote class="photo__author-text">Где снег-то?</blockquote>
               <a class="photo__like-link" href="#">
                 <span class="photo__like-icon"></span>
-                <span class="photo__like-number">Нравится:150</span>
+                <span class="photo__like-number">Нравится: 150</span>
               </a>
             </div>
-          </li>
-          <li class="photo__item">
+          </figure>
+          <figure class="photo__item">
             <a class="photo__link" href="#">
-              <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Авиалайнер">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Авиалайнер">
+              </picture>
             </a>
             <div class="photo__wrapper-inner">
               <div class="photo__name">
@@ -200,54 +228,59 @@
               <blockquote class="photo__author-text">Всем GM и взаимные лайки!</blockquote>
               <a class="photo__like-link" href="#">
                 <span class="photo__like-icon"></span>
-                <span class="photo__like-number">Нравится:2560</span>
+                <span class="photo__like-number">Нравится: 2560</span>
               </a>
             </div>
-          </li>
-        </ul>
-      </section>
-      <section class="appeal container">
-        <p class="appeal__text"><span class="appeal__text--phrase">Затмите их всех!</span>Выкладывайте все, что накопилось в телефоне!</p>
+          </figure>
+        </div>
       </section>
       <section class="photo-post">
+        <div class="photo-post__header">
+          <p class="photo-post__text"><span class="photo-post__text--phrase">Затмите их всех!</span>Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
         <form class="photo-post__form" action="https://echo.htmlacademy.ru" method="post">
-          <img class="photo-post__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Дорога">
-          <div class="photo-post__form-settings settings">
-            <ul class="settings__list">
-              <li class="settings__item">
-                <input class="visually-hidden settings__control" id="crop-icon" name="crop">
-                <label class="settings__label settings__label--crop" for="crop-icon"></label>
-                <div class="settings__range settings__range--tablet">
-                  <div class="settings__scale"></div>
-                  <button class="settings__toggle"><span class="visually-hidden">Регулировка</span></button>
-                </div>
-              </li>
-              <li class="settings__item">
-                <input class="visually-hidden settings__control" id="fill-icon" name="fill">
-                <label class="settings__label settings__label--fill" for="fill-icon"></label>
-                <div class="settings__range settings__range--tablet">
-                  <div class="settings__scale"></div>
-                  <button class="settings__toggle"><span class="visually-hidden">Регулировка</span></button>
-                </div>
-              </li>
-              <li class="settings__item">
-                <input class="visually-hidden settings__control" id="contrast-icon" name="grey">
-                <label class="settings__label settings__label--contrast" for="contrast-icon"></label>
-                <div class="settings__range settings__range--tablet">
-                  <div class="settings__scale"></div>
-                  <button class="settings__toggle"><span class="visually-hidden">Регулировка</span></button>
-                </div>
-              </li>
-            </ul>
-            <div class="settings__range settings__range--mobile">
-              <div class="settings__scale"></div>
-              <button class="btn settings__toggle"><span class="visually-hidden">Регулировка</span></button>
+        <div class="photo-post__form-wrapper">
+            <picture class="photo-post__img-wrapper">
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
+              <img class="photo-post__img" src="img/photo-road-mobile@1x.jpg" alt="Дорога">
+            </picture>
+            <div class="photo-post__form-settings settings">
+              <ul class="settings__list">
+                <li class="settings__item">
+                  <input class="visually-hidden settings__control" id="crop-icon" name="crop">
+                  <label class="settings__label settings__label--crop" for="crop-icon"></label>
+                  <div class="settings__range settings__range--tablet">
+                    <div class="settings__scale"></div>
+                    <button class="settings__toggle settings__toggle--crop"><span class="visually-hidden">Регулировка</span></button>
+                  </div>
+                </li>
+                <li class="settings__item">
+                  <input class="visually-hidden settings__control" id="fill-icon" name="fill">
+                  <label class="settings__label settings__label--fill" for="fill-icon"></label>
+                  <div class="settings__range settings__range--tablet">
+                    <div class="settings__scale"></div>
+                    <button class="settings__toggle settings__toggle--fill"><span class="visually-hidden">Регулировка</span></button>
+                  </div>
+                </li>
+                <li class="settings__item">
+                  <input class="visually-hidden settings__control" id="contrast-icon" name="grey">
+                  <label class="settings__label settings__label--contrast" for="contrast-icon"></label>
+                  <div class="settings__range settings__range--tablet">
+                    <div class="settings__scale"></div>
+                    <button class="settings__toggle settings__toggle--contrast"><span class="visually-hidden">Регулировка</span></button>
+                  </div>
+                </li>
+              </ul>
+              <div class="settings__range">
+                <div class="settings__scale"></div>
+                <button class="btn settings__toggle"><span class="visually-hidden">Регулировка</span></button>
+              </div>
+              <div class="photo-post__buttons">
+                <button class="btn photo-post__btn" type="submit">Запостить</button>
+                <button class="btn photo-post__btn photo-post__btn--no">Отмена</button>
+              </div>
             </div>
-
-          <div class="photo-post__buttons">
-            <button class="btn photo-post__btn" type="submit">Запостить</button>
-            <button class="btn photo-post__btn photo-post__btn--no">Отмена</button>
-          </div>
           </div>
         </form>
       </section>
