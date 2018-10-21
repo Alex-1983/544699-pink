@@ -5,12 +5,11 @@
     <title>HTML ACADEMY: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
     <header class="page-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo">
             <svg class="main-nav__logo-desktop" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
@@ -71,7 +70,7 @@
               <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">Конкурс</a>
+              <a class="site-list__link site-list__link--active">Конкурс</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="#">HTML Academy</a>
@@ -240,17 +239,17 @@
       </div>
     </footer>
     <section class="modal modal-cart">
-      <h2 class="modal__title">Что-то пошло не так!</h2>
-      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <div class="modal-button__wrapper">
-        <button class="btn modal-button" type="button">Ок</button>
+      <h2 class="modal-cart__title">Что-то пошло не так!</h2>
+      <p class="modal-cart__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="modal-cart__wrapper-btn">
+        <button class="btn modal-cart__button" type="button">Ок</button>
       </div>
     </section>
     <section class="modal modal-answer">
-      <h2 class="modal__title">Ваша заявка отправлена</h2>
-      <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-      <div class="modal-button__wrapper">
-        <button class="btn modal-button" type="button">Закрыть окно</button>
+      <h2 class="modal-answer__title">Ваша заявка отправлена</h2>
+      <p class="modal-answer__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее <span class="modal-answer__text--br">и</span> оповестим вас.</p>
+      <div class="modal-answer__wrapper-btn">
+        <button class="btn modal-answer__button" type="button">Закрыть окно</button>
       </div>
     </section>
     <script src="js/app.min.js"></script>

@@ -7,6 +7,15 @@
   line-height: 24px;
   text-align: center;
 
+  @media (min-width: @tablet-width) {
+    padding: 50px 0 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 65px;
+    padding-bottom: 0;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -23,29 +32,21 @@
     background-repeat: no-repeat;
     background-position: 0 0, 100% 0;
     background-size: 50.1% 100%;
-  }
 
-  @media (min-width: @tablet-width) {
-    padding: 50px 0 25px;
-
-    &::after {
+    @media (min-width: @tablet-width) {
       bottom: -70px;
 
       height: 70px;
     }
-  }
 
-  @media (min-width: @desktop-width) {
-    padding-top: 65px;
-    padding-bottom: 0;
-
-    &::after {
+    @media (min-width: @desktop-width) {
       bottom: -105px;
 
       height: 110px;
     }
   }
 }
+
 
 .contacts-group__header {
   margin: 0;
@@ -94,50 +95,54 @@
 .contacts-group__item {
   margin-bottom: 26px;
 
-  &--email {
-    margin-bottom: 29px;
-  }
-
-  &--adress {
-    margin-bottom: 30px;
-  }
-
   @media (min-width: @tablet-width) {
     margin-bottom: 52px;
 
     width: 285px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    &--phone {
-      margin-right: 18px;
-    }
-
-    &--email {
-      margin-left: 18px;
-    }
   }
 
   @media (min-width: @desktop-width) {
     width: 290px;
+  }
 
-    &--phone {
-      order: 1;
+  &--email {
+    margin-bottom: 29px;
 
-      margin-right: 30px;
+    @media (min-width: @tablet-width) {
+      margin-left: 18px;
     }
 
-    &--email {
+    @media (min-width: @desktop-width) {
       order: 3;
 
       margin: 0;
     }
+  }
 
-    &--adress {
+  &--adress {
+    margin-bottom: 30px;
+
+    @media (min-width: @desktop-width) {
       order: 2;
       margin-right: 30px;
+    }
+  }
+
+  &--phone {
+    @media (min-width: @tablet-width) {
+      margin-right: 18px;
+    }
+
+    @media (min-width: @desktop-width) {
+      order: 1;
+
+      margin-right: 30px;
+    }
+  }
+
+  &:last-child {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
     }
   }
 }
@@ -152,16 +157,20 @@
   font-size: 18px;
   line-height: 18px;
 
-  &--email {
-    margin-bottom: 9px;
-  }
-
   @media (min-width: @tablet-width) {
     margin-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 30px;
+  }
+
+  &--email {
+    margin-bottom: 9px;
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 30px;
+    }
   }
 }
 

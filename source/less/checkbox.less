@@ -12,8 +12,9 @@
     padding-bottom: 50px;
     padding-top: 56px;
 
-    width: 100%;
     order: 4;
+
+    width: 100%;
 
     background-color: @bg-white;
     border: 2px solid #e5e5e5;
@@ -74,42 +75,52 @@
 
   min-width: 260px;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    &--1 {
+  &--1 {
+    @media (min-width: @desktop-width) {
       order: 1;
     }
+  }
 
-    &--2 {
+  &--2 {
+    @media (min-width: @desktop-width) {
       order: 4;
     }
+  }
 
-    &--3 {
+  &--3 {
+    @media (min-width: @desktop-width) {
       order: 2;
 
       min-width: 245px;
     }
+  }
 
-    &--4 {
+  &--4 {
+    @media (min-width: @desktop-width) {
       order: 5;
 
       min-width: 245px;
     }
+  }
 
-    &--5 {
+  &--5 {
+    @media (min-width: @desktop-width) {
       order: 3;
 
       min-width: 215px;
     }
+  }
 
-    &--6 {
+  &--6 {
+    @media (min-width: @desktop-width) {
       order: 6;
 
       min-width: 215px;
     }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -128,20 +139,28 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 57px;
+  }
 
-    &--3 {
+  &--3 {
+    @media (min-width: @desktop-width) {
       padding-left: 60px;
     }
+  }
 
-    &--4 {
+  &--4 {
+    @media (min-width: @desktop-width) {
       padding-left: 60px;
     }
+  }
 
-    &--5 {
+  &--5 {
+    @media (min-width: @desktop-width) {
       padding-left: 55px;
     }
+  }
 
-    &--6 {
+  &--6 {
+    @media (min-width: @desktop-width) {
       padding-left: 55px;
     }
   }

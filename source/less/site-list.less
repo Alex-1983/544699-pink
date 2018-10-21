@@ -1,9 +1,11 @@
 // out:null
-@media (min-width: @desktop-width) {
-  .site-list__item {
+.site-list__item {
+  @media (min-width: @desktop-width) {
     margin-right: 83px;
+  }
 
-    &:last-child {
+  &:last-child {
+    @media (min-width: @desktop-width) {
       margin-right: 0;
     }
   }
@@ -23,20 +25,25 @@
   border-bottom: 1px solid #1c1c1c;
   cursor: pointer;
 
+  @media (min-width: @desktop-width) {
+    padding: 26px 0 10px;
+
+    text-transform: capitalize;
+    background-color: transparent;
+    border: none;
+  }
+
+  &--active {
+    @media (min-width: @desktop-width) {
+      border-bottom: 2px solid @bg-white;
+    }
+  }
+
   &:hover {
     color: @bg-pink;
   }
 
   &:active {
     color: rgba(210, 40, 86, 0.3);
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .site-list__link {
-    padding: 26px 0;
-    text-transform: capitalize;
-    background-color: transparent;
-    border: none;
   }
 }
