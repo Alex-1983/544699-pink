@@ -343,27 +343,27 @@
   vertical-align: middle;
   cursor: pointer;
 
+  &--active {
+    width: 12px;
+    height: 12px;
+
+    background-color: @bg-white;
+    border: 3px solid @bg-blue;
+
+    &:hover {
+      background-color: @bg-white;
+    }
+
+    &:active {
+      background-color: @bg-white;
+    }
+  }
+
   &:hover {
     background-color: #7e868f;
   }
 
   &:active {
     background-color: #e9ebec;
-  }
-}
-
-.price__toggle-active {
-  width: 12px;
-  height: 12px;
-
-  background-color: @bg-white;
-  border: 3px solid @bg-blue;
-
-  &:hover {
-    background-color: @bg-white;
-  }
-
-  &:active {
-    background-color: @bg-white;
   }
 }
