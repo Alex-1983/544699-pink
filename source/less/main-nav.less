@@ -31,6 +31,18 @@
 }
 
 .main-nav__logo-mobile {
+  fill: @bg-white;
+
+  cursor: pointer;
+
+  &:hover {
+    fill: @bg-pink;
+  }
+
+  &:active {
+    fill: rgba(128, 138, 148, 0.3);
+  }
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -41,6 +53,18 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+
+    fill: @bg-white;
+
+    cursor: pointer;
+
+    &:hover {
+      fill: @bg-pink;
+    }
+
+    &:active {
+      fill: rgba(128, 138, 148, 0.3);
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -53,7 +77,10 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+
     margin-top: 5px;
+
+    cursor: pointer;
   }
 }
 

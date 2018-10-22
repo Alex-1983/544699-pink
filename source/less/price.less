@@ -128,40 +128,53 @@
   @media (min-width: @desktop-width) {
     padding: 5px;
 
-    .size(235px, 99px);
+    .size(235px, 97px);
   }
 }
 
 .price__cell-th--hit {
   position: relative;
-  overflow: hidden;
 
   &::before {
-    content: "Хит";
+    content: "";
     position: absolute;
-    top: 13px;
-    left: -52px;
+    top: 0;
+    left: -2px;
 
-    .size(150px, 30px);
+    .size(74px, 73px);
+
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      top: -9px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 0;
+    }
+  }
+
+  &::after {
+    content: "ХИТ";
+    position: absolute;
+    top: 12px;
+    left: 10px;
 
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
-
-    background-color: #d22856;
     transform: rotate(-45deg);
 
     @media (min-width: @tablet-width) {
-      top: 6px;
-      left: -54px;
-
-      height: 29px;
+      top: 5px;
+      left: 9px;
     }
 
     @media (min-width: @desktop-width) {
-      top: 12px;
-      left: -40px;
+      top: 10px;
+      left: 12px;
     }
   }
 }
@@ -181,7 +194,7 @@
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
-    line-height: 38px;
+    line-height: 37px;
   }
 }
 
@@ -243,8 +256,8 @@
   }
 
   &--icon-yes::after {
-    top: 19px;
-    right: 16px;
+    top: 18px;
+    right: 13px;
 
     .size(34px, 23px);
 
@@ -262,8 +275,8 @@
   }
 
   &--icon-no::after {
-    top: 15px;
-    right: 19px;
+    top: 13px;
+    right: 17px;
 
     .size(27px, 26px);
 

@@ -68,7 +68,11 @@
     width: 700px;
     height: 545px;
 
-    z-index: 1;
+    overflow: hidden;
+  }
+
+  @media (min-width: @tablet-width) {
+    overflow: visible;
   }
 }
 

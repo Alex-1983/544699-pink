@@ -1,7 +1,6 @@
 // out:null
 .settings {
   @media (min-width: @tablet-width) {
-    padding-top: 20px;
     width: 275px;
   }
 
@@ -31,28 +30,28 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 110px;
+    margin-bottom: 128px;
 
     width: 410px;
   }
 }
 
 .settings__item {
-  margin-right: 26px;
+  margin-right: 25px;
 
   z-index: 1;
 
-  width: 55px;
+  width: 56px;
   min-height: 55px;
 
   @media (min-width: @tablet-width) {
     display: flex;
 
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 16px;
 
     width: 275px;
-    min-height: 36px;
+    min-height: 55px;
 
     border-bottom: 1px solid #dddfe0;
   }
@@ -68,76 +67,85 @@
 
 .settings__label {
   position: relative;
-  z-index: 5;
   display: flex;
+
+  .size(56px, 55px);
 
   cursor: pointer;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+  @media (min-width: @desktop-width) {
+    margin-right: 35px;
+  }
+}
 
-    .size(55px, 55px);
+.settings__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-    background-repeat: no-repeat;
+  fill: #b5b9be;
+  transform: translate(-50%, -50%);
 
+  &--crop {
     @media (min-width: @tablet-width) {
-      top: -17px;
-      left: 0;
+      top: 20px;
+      left: 14px;
+
+      .size(22px, 22px);
+
+      fill: @bg-pink;
     }
 
     @media (min-width: @desktop-width) {
-      top: -23px;
-      left: 0;
+      left: 21px;
+
+      .size(44px, 44px);
     }
   }
 
-  &--crop::before {
-    background-image: url("../img/icon-editor-crop.svg");
-    background-position: 6px 4px;
-
+  &--fill {
     @media (min-width: @tablet-width) {
-      background-image: url("../img/icon-editor-crop-tablet.svg");
-      background-position: 3px 5px;
+      top: 22px;
+      left: 15px;
+
+      .size(24px, 22px);
+
+      fill: @bg-pink;
     }
 
     @media (min-width: @desktop-width) {
-      background-image: url("../img/icon-editor-crop-desktop.svg");
-      background-position: -3px -1px;
+      top: 24px;
+      left: 22px;
+
+      .size(48px, 43px);
     }
   }
 
-  &--fill::before {
-    background-image: url("../img/icon-editor-fill.svg");
-    background-position: 5px 6px;
-
+  &--contrast {
     @media (min-width: @tablet-width) {
-      background-image: url("../img/icon-editor-fill-tablet.svg");
-      background-position: 4px 10px;
+      top: 19px;
+      left: 15px;
+
+      .size(16px, 16px);
+
+      fill: @bg-pink;
     }
 
     @media (min-width: @desktop-width) {
-      background-image: url("../img/icon-editor-fill-desktop.svg");
-      background-position: -1px 3px;
+      top: 22px;
+      left: 20px;
+
+      .size(32px, 32px);
     }
   }
 
-  &--contrast::before {
-    background-image: url("../img/icon-editor-contrast.svg");
-    background-position: 12px 12px;
-
-    @media (min-width: @tablet-width) {
-      background-image: url("../img/icon-editor-contrast-tablet.svg");
-      background-position: 8px 9px;
-    }
-
-    @media (min-width: @desktop-width) {
-      background-image: url("../img/icon-editor-contrast-desktop.svg");
-      background-position: 5px 8px;
-    }
+  &:hover {
+    fill: #8d949b;
   }
+}
+
+.settings__icon-active {
+  fill: @bg-pink;
 }
 
 .settings__range {
@@ -155,13 +163,7 @@
     @media (min-width: @tablet-width) {
       display: block;
 
-      padding-left: 55px;
-
       border: none;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding-left: 90px;
     }
   }
 }
@@ -176,7 +178,7 @@
   background: @bg-blue;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 33px;
+    margin-top: 18px;
 
     width: 202px;
   }
@@ -193,7 +195,7 @@
 
   .size(14px, 14px);
 
-  background-color: #ffffff;
+  background-color: @bg-gray;
 
   border: 2px solid @bg-pink;
   border-radius: 50%;
@@ -204,37 +206,42 @@
     .size(13px, 13px);
   }
 
-  &:active {
-    background-color: @bg-pink;
-  }
-
   &--crop {
     @media (min-width: @tablet-width) {
-      left: 202px;
+      top: 12px;
+      left: 146px;
     }
 
     @media (min-width: @desktop-width) {
-      left: 164px;
+      top: 13px;
+      left: 73px;
     }
   }
 
   &--fill {
     @media (min-width: @tablet-width) {
-      left: 81px;
+      top: 13px;
+      left: 26px;
     }
 
     @media (min-width: @desktop-width) {
-      left: 340px;
+      top: 14px;
+      left: 248px;
     }
   }
 
   &--contrast {
     @media (min-width: @tablet-width) {
-      left: 152px;
+      top: 11px;
+      left: 97px;
     }
 
     @media (min-width: @desktop-width) {
-      left: 252px;
+      left: 162px;
     }
+  }
+
+  &:active {
+    background-color: @bg-pink;
   }
 }
