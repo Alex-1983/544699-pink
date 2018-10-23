@@ -5,7 +5,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
-    padding: 65px 0 21px;
+    padding: 65px 0 22px;
     width: 93.9%;
 
     max-width: 960px;
@@ -13,8 +13,10 @@
 
   @media (min-width: @desktop-width) {
     padding: 73px 10px 38px;
+  }
 
-    &::before {
+  &::before {
+    @media (min-width: @desktop-width) {
       content: "";
       display: block;
 
@@ -108,14 +110,12 @@
   }
 }
 
-
-@media (min-width: @tablet-width) {
-  .review__item-inner {
+.review__item-inner {
+  @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
   }
 }
-
 
 .review__author-container {
   @media (min-width: @tablet-width) {

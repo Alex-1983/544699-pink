@@ -30,6 +30,28 @@
   border-radius: 50%;
   border: 3px solid #e9ebec;
 
+  @media (min-width: @tablet-width) {
+    margin: 0 14px 5px 0;
+  }
+
+  &--twitter {
+    background-image: url("../img/icon-twitter.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--facebook {
+    background-image: url("../img/icon-facebook.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   &:hover {
     border: 3px solid @bg-blue;
   }
@@ -37,26 +59,4 @@
   &:active {
     opacity: 0.3;
   }
-
-  @media (min-width: @tablet-width) {
-    margin: 0 14px 5px 0;
-  }
-}
-
-.social__link--twitter {
-  background-image: url("../img/icon-twitter.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social__link--facebook {
-  background-image: url("../img/icon-facebook.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social__link--youtube {
-  background-image: url("../img/icon-youtube.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }

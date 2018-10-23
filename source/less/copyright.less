@@ -1,7 +1,7 @@
 // out:null
 .copyright {
   @media (min-width: @tablet-width) {
-    width: 132px;
+    width: 129px;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,14 +34,14 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .copyright__link-svg:hover {
+.copyright__link-svg {
+  fill: @bg-pink;
+
+  &:hover {
     fill: @bg-blue;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .copyright__link-svg:active {
+  &:active {
     fill: rgba(40, 54, 69, 0.3);
   }
 }

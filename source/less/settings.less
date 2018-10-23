@@ -1,46 +1,67 @@
 // out:null
-@media (min-width: @tablet-width) {
-  .settings {
-    padding-left: 3.9%;
-    padding-right: 1.8%;
-
-    width: 45.4%;
+.settings {
+  @media (min-width: @tablet-width) {
+    width: 275px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .settings {
-    padding: 0;
-    padding-right: 60px;
-
-    width: 470px;
+  @media (min-width: @desktop-width) {
+    width: 410px;
   }
 }
 
 .settings__list {
   .reset-list();
-
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 
   margin: 0 auto;
-  margin-bottom: 38px;
+  margin-bottom: 34px;
 
   width: 225px;
-}
 
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
 
-@media (min-width: @tablet-width) {
-  .settings__list {
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    width: 275px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 128px;
+
+    width: 410px;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .settings__item {
+.settings__item {
+  margin-right: 25px;
+
+  z-index: 1;
+
+  width: 56px;
+  min-height: 55px;
+
+  @media (min-width: @tablet-width) {
     display: flex;
+
+    margin: 0;
+    margin-bottom: 16px;
+
+    width: 275px;
+    min-height: 55px;
+
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 410px;
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
   }
 }
 
@@ -48,54 +69,105 @@
   position: relative;
   display: flex;
 
-  padding: 0 10px;
+  .size(56px, 55px);
 
-  &::before {
-    content: "";
+  cursor: pointer;
 
-    .size(55px, 55px);
+  @media (min-width: @desktop-width) {
+    margin-right: 35px;
   }
 }
 
-.settings__label--crop {
-  background-image: url("../img/icon-editor-crop.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.settings__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  fill: #b5b9be;
+  transform: translate(-50%, -50%);
+
+  &--crop {
+    @media (min-width: @tablet-width) {
+      top: 20px;
+      left: 14px;
+
+      .size(22px, 22px);
+
+      fill: @bg-pink;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 21px;
+
+      .size(44px, 44px);
+    }
+  }
+
+  &--fill {
+    @media (min-width: @tablet-width) {
+      top: 22px;
+      left: 15px;
+
+      .size(24px, 22px);
+
+      fill: @bg-pink;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 24px;
+      left: 22px;
+
+      .size(48px, 43px);
+    }
+  }
+
+  &--contrast {
+    @media (min-width: @tablet-width) {
+      top: 19px;
+      left: 15px;
+
+      .size(16px, 16px);
+
+      fill: @bg-pink;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 22px;
+      left: 20px;
+
+      .size(32px, 32px);
+    }
+  }
+
+  &:hover {
+    fill: #8d949b;
+  }
 }
 
-.settings__label--fill {
-  background-image: url("../img/icon-editor-fill.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.settings__label--contrast {
-  background-image: url("../img/icon-editor-contrast.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.settings__icon-active {
+  fill: @bg-pink;
 }
 
 .settings__range {
-  display: none;
-}
-
-@media (min-width: @tablet-width) {
-  .settings__range {
-    display: block;
-  }
-}
-
-.settings__range--mobile {
   position: relative;
 
-  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
-  border-bottom: 1px solid #dddfe0;
-}
+  width: 280px;
 
-@media (min-width: @tablet-width) {
-  .settings__range--mobile {
+  @media (min-width: @tablet-width) {
     display: none;
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+
+      border: none;
+    }
   }
 }
 
@@ -103,27 +175,76 @@
   margin: 0 auto;
   margin-bottom: 35px;
 
-  width: 280px;
+  width: 235px;
   height: 2px;
 
   background: @bg-blue;
-}
 
-@media (min-width: @tablet-width) {
-  .settings__scale {
-    width: 200px;
+  @media (min-width: @tablet-width) {
+    margin-top: 18px;
+
+    width: 202px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 290px;
   }
 }
 
 .settings__toggle {
   position: absolute;
   top: -6px;
-  left: 65%;
+  left: 212px;
 
   .size(14px, 14px);
 
-  background-color: #ffffff;
+  background-color: @bg-gray;
 
   border: 2px solid @bg-pink;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+
+    .size(13px, 13px);
+  }
+
+  &--crop {
+    @media (min-width: @tablet-width) {
+      top: 12px;
+      left: 146px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 13px;
+      left: 73px;
+    }
+  }
+
+  &--fill {
+    @media (min-width: @tablet-width) {
+      top: 13px;
+      left: 26px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 14px;
+      left: 248px;
+    }
+  }
+
+  &--contrast {
+    @media (min-width: @tablet-width) {
+      top: 11px;
+      left: 97px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 162px;
+    }
+  }
+
+  &:active {
+    background-color: @bg-pink;
+  }
 }

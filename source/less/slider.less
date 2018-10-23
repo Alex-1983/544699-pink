@@ -15,23 +15,31 @@
   }
 }
 
-.slider__toggles-item--3 {
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
+.slider__item {
+  display: none;
+}
+
+.slider__item-active {
+  display: block;
 }
 
 .slider__toggle {
   margin: 0 9px;
-  width: 6px;
-  height: 6px;
 
-  font-size: 0;
-  color: transparent;
+  .size(6px, 6px);
+
   background-color: #bec2c7;
 
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
 }
 
 .slider__toggle-active {
@@ -41,12 +49,12 @@
   background-color: transparent;
 
   border: 3px solid @bg-blue;
-}
 
-.slider__item {
-  display: none;
-}
+  &:hover {
+    background-color: @bg-white;
+  }
 
-.slider__item-active {
-  display: block;
+  &:active {
+    background-color: @bg-white;
+  }
 }

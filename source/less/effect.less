@@ -20,7 +20,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 22px 10px 113px;
+    padding: 22px 10px 115px;
     width: 960px;
     background-color: @bg-gray;
   }
@@ -28,11 +28,16 @@
 
 .effect__inner {
   @media (min-width: @tablet-width) {
-
     position: relative;
     padding-left: 50%;
+  }
 
-    &::before {
+  @media (min-width: @desktop-width) {
+    padding-left: 365px;
+  }
+
+  &::before {
+    @media (min-width: @tablet-width) {
       content: "";
       position: absolute;
       top: -37px;
@@ -43,7 +48,17 @@
       background-repeat: no-repeat;
     }
 
-    &::after {
+    @media (min-width: @desktop-width) {
+      top: -91px;
+
+      .size(300px, 345px);
+
+      background-image: url("../img/icon-timer-desctop.svg");
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
       content: "24";
       position: absolute;
       top: 23px;
@@ -55,20 +70,8 @@
       color: #d22856;
       text-align: center;
     }
-  }
 
-  @media (min-width: @desktop-width) {
-    padding-left: 365px;
-
-    &::before {
-      top: -91px;
-
-      .size(300px, 345px);
-
-      background-image: url("../img/icon-timer-desctop.svg");
-    }
-
-    &::after {
+    @media (min-width: @desktop-width) {
       top: 0;
       left: 80px;
 
@@ -86,6 +89,10 @@
   line-height: 36px;
   color: #000000;
 
+  @media (min-width: @tablet-width) {
+    margin-top: 34px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-top: 92px;
     margin-bottom: 20px;
@@ -93,14 +100,15 @@
 }
 
 .effect__title-br {
-  display: block;
-  margin: 0;
-  padding: 0;
-  padding-right: 50px;
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
 
   @media (min-width: @desktop-width) {
     display: inline;
-    padding: 0;
+    margin-right: 8px;
   }
 }
 
@@ -136,6 +144,14 @@
 }
 
 .effect__text-br2 {
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 36px;
+  }
+}
+
+.effect__text-br3 {
   display: inline-block;
   vertical-align: top;
 
@@ -144,14 +160,6 @@
   @media (min-width: @desktop-width) {
     display: inline;
     margin: 0;
-  }
-}
-
-.effect__text-br3 {
-  @media (min-width: @desktop-width) {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 36px;
   }
 }
 
