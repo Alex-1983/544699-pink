@@ -8,20 +8,23 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page">
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo">
             <svg class="main-nav__logo-desktop" width="146.3px" height="40.375px">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#main-nav__logo-desktop"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-desktop"></use>
             </svg>
           </a>
           <div class="main-nav__item main-nav__item--active">
             <svg class="main-nav__logo-mobile" width="74.426px" height="22.859px">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#main-nav__logo-mobile"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile"></use>
             </svg>
             <svg class="main-nav__logo-tablet" width="146.3px" height="40.375px">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#main-nav__logo-tablet"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-tablet"></use>
             </svg>
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
           </div>
@@ -87,7 +90,7 @@
 
                 <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                <img class="photo__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"  alt="Машина">
+                <img class="photo__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Машина">
               </picture>
             </a>
             <div class="photo__wrapper-inner">
@@ -245,7 +248,7 @@
                   <input class="visually-hidden settings__control" id="crop-icon" name="crop">
                   <label class="settings__label" for="crop-icon">
                     <svg class="settings__icon settings__icon--crop settings__icon-active" width="48px" height="48px">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#settings-icon-crop"></use>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-crop"></use>
                     </svg>
                   </label>
                   <div class="settings__range settings__range--tablet">
@@ -257,7 +260,7 @@
                   <input class="visually-hidden settings__control" id="fill-icon" name="fill">
                   <label class="settings__label" for="fill-icon">
                     <svg class="settings__icon settings__icon--fill" width="48px" height="48px">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#settings-icon-fill"></use>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-fill"></use>
                     </svg>
                   </label>
                   <div class="settings__range settings__range--tablet">
@@ -269,7 +272,7 @@
                   <input class="visually-hidden settings__control" id="contrast-icon" name="grey">
                   <label class="settings__label" for="contrast-icon">
                     <svg class="settings__icon settings__icon--contrast" width="32px" height="32px">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#settings-icon-contrast"></use>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-contrast"></use>
                     </svg>
                   </label>
                   <div class="settings__range settings__range--tablet">
@@ -296,10 +299,10 @@
         <a class="page-footer__logo" href="#">
           <span class="visually-hidden">Pink</span>
           <svg class="page-footer__logo-mobile" width="146.3px" height="40.375px">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#page-footer__logo-mobile"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-mobile"></use>
           </svg>
           <svg class="page-footer__logo-desktop" width="146.3px" height="40.375px">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#page-footer__logo-desktop"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-desktop"></use>
           </svg>
         </a>
         <div class="page-footer__social social">
@@ -320,7 +323,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
             <svg class="copyright__link-svg" width="26.943px" height="34.09px">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#copyright__link-svg"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>

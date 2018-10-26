@@ -8,20 +8,23 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page">
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo">
             <svg class="main-nav__logo-desktop" width="146.3px" height="40.375px">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#main-nav__logo-desktop"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-desktop"></use>
             </svg>
           </a>
           <div class="main-nav__item main-nav__item--active">
             <svg class="main-nav__logo-mobile" width="74.426px" height="22.859px">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#main-nav__logo-mobile"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile"></use>
             </svg>
             <svg class="main-nav__logo-tablet" width="146.3px" height="40.375px">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#main-nav__logo-tablet"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-tablet"></use>
             </svg>
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
           </div>
@@ -48,6 +51,10 @@
           <div class="intro__promo">
             <div class="intro__promo-img">
               <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp, img/iphone-hand-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp, img/iphone-hand-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp, img/iphone-hand-mobile@2x.webp 2x">
+
                 <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png 2x">
                 <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png 2x">
                 <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="pink">
@@ -222,10 +229,10 @@
         <a class="page-footer__logo" href="#">
           <span class="visually-hidden">Pink</span>
           <svg class="page-footer__logo-mobile" width="146.3px" height="40.375px">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#page-footer__logo-mobile"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-mobile"></use>
           </svg>
           <svg class="page-footer__logo-desktop" width="146.3px" height="40.375px">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#page-footer__logo-desktop"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-desktop"></use>
           </svg>
         </a>
         <div class="page-footer__social social">
@@ -246,7 +253,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
             <svg class="copyright__link-svg" width="26.943px" height="34.09px">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#copyright__link-svg"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
