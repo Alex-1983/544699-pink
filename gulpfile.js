@@ -29,12 +29,12 @@ gulp.task("css", function () {
 });
 
 gulp.task("sprite", function (){
-  return gulp.src("source/img/sprite/*.svg")
+  return gulp.src("build/img/sprite/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("html", function (){
@@ -79,8 +79,8 @@ gulp.task("clean", function() {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
-  "css",
   "sprite",
+  "css",
   "html"
 ));
 
