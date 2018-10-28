@@ -48,19 +48,26 @@
 }
 
 .contacts-group__header {
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 auto 34px;
   padding: 0;
+
+  width: 225px;
+
+  line-height: 30px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 50px;
+
+    width: 380px;
 
     font-size: 40px;
     line-height: 45px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 62px;
+    margin-bottom: 59px;
+
+    width: 470px;
 
     font-size: 50px;
     line-height: 60px;
@@ -82,22 +89,6 @@
     justify-content: flex-start;
 
     width: 930px;
-  }
-}
-
-.contacts-group__appeal {
-  display: block;
-  margin: 0;
-  padding: 0;
-
-  line-height: 30px;
-
-  @media (min-width: @tablet-width) {
-    line-height: 44px;
-  }
-
-  @media (min-width: @desktop-width) {
-    line-height: 57px;
   }
 }
 
@@ -129,7 +120,7 @@
     }
   }
 
-  &--adress {
+  &--address {
     margin-bottom: 30px;
 
     @media (min-width: @desktop-width) {

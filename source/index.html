@@ -15,18 +15,18 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo">
-            <svg class="main-nav__logo-desktop" width="146.3px" height="40.375px">
+            <svg class="main-nav__logo-desktop" width="146.3" height="40.375">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-desktop"></use>
             </svg>
           </a>
           <div class="main-nav__item main-nav__item--active">
-            <svg class="main-nav__logo-mobile" width="74.426px" height="22.859px">
+            <svg class="main-nav__logo-mobile" width="74.426" height="22.859">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile"></use>
             </svg>
-            <svg class="main-nav__logo-tablet" width="146.3px" height="40.375px">
+            <svg class="main-nav__logo-tablet" width="146.3" height="40.375">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-tablet"></use>
             </svg>
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
@@ -50,6 +50,7 @@
     </header>
     <main class="page-main">
       <section class="intro">
+        <h2 class="visually-hidden">Мобильное приложение pink</h2>
         <div class="intro__container">
           <div class="intro__promo">
             <div class="intro__promo-img">
@@ -67,16 +68,16 @@
           <div class="download">
             <div class="download__wrapper">
               <span class="download__heading">Взгляните на жизнь иначе!</span>
-              <a class="download__application" href="#">Скачать приложение</a>
+              <a class="download__application" href="https://www.apple.com/itunes/">Скачать приложение</a>
               <ul class="download__list-link">
                 <li class="download__item">
-                  <a class="download__link download__link--aplle" href="#"><span class="visually-hidden">apple</span></a>
+                  <a class="download__link download__link--aplle" href="https://www.apple.com/itunes/"><span class="visually-hidden">apple</span></a>
                 </li>
                 <li class="download__item">
-                  <a class="download__link download__link--android" href="#"><span class="visually-hidden">android</span></a>
+                  <a class="download__link download__link--android" href="https://www.android.com/itunes/"><span class="visually-hidden">android</span></a>
                 </li>
                 <li class="download__item">
-                  <a class="download__link download__link--microsoft" href="#"><span class="visually-hidden">microsoft</span></a>
+                  <a class="download__link download__link--microsoft" href="https://www.microsoft.com/itunes/"><span class="visually-hidden">microsoft</span></a>
                 </li>
               </ul>
               <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -97,7 +98,7 @@
           <li class="features__item features__item--2">
             <h2 class="features__title features__title--2">Меняет мир вокруг</h2>
             <p class="features__text features__text--2">Сделайте снимок и украсьте его смайликом или текстовой подписью
-            <span class="features__text--br">чтобы</span> усилить эффект</p>
+            <span class="features__text-br">чтобы</span> усилить эффект</p>
           </li>
           <li class="features__item features__item--3">
             <h2 class="features__title features__title--3">Заводит новых друзей</h2>
@@ -117,8 +118,8 @@
       <section class="review">
         <div class="review__wrapper">
           <h2 class="visually-hidden">Отзывы о приложении</h2>
-          <ul class="review__list slider">
-            <li class="review__item slider__item slider__item-active">
+          <div class="review__list slider">
+            <div class="review__item slider__item slider__item-active">
               <div class="review__item-inner">
                 <div class="review__author-container">
                   <cite class="review__author-name">Николай Петров</cite>
@@ -126,32 +127,27 @@
                 </div>
                 <blockquote class="review__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
               </div>
-            </li>
-            <li class="review__item slider__item">
+            </div>
+            <div class="review__item slider__item">
               <cite class="review__author-name">Николай Петров</cite>
               <blockquote class="review__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
-            </li>
-            <li class="review__item slider__item">
+            </div>
+            <div class="review__item slider__item">
               <cite class="review__author-name">Николай Петров</cite>
               <blockquote class="review__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
-            </li>
-          </ul>
-          <button class="btn btn__review btn__review--prev"><span class="visually-hidden">Предыдущий отзыв</span></button>
-          <button class="btn btn__review btn__review--next"><span class="visually-hidden">Слудующий отзыв</span></button>
-          <ul class="review__toggles slider__toggles-list">
-            <li class="slider__toggles-item slider__item-active">
-              <button class="btn slider__toggle slider__toggle-active" type="button"><span class="visually-hidden">Первый слайд</span></button>
-            </li>
-            <li class="slider__toggles-item">
+            </div>
+            <button class="btn btn__review btn__review--prev"><span class="visually-hidden">Предыдущий отзыв</span></button>
+            <button class="btn btn__review btn__review--next"><span class="visually-hidden">Слудующий отзыв</span></button>
+            <div class="review__toggles slider__toggles">
+              <button class="btn slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">Первый слайд</span></button>
               <button class="btn slider__toggle" type="button"><span class="visually-hidden">Второй слайд</span></button>
-            </li>
-            <li class="slider__toggles-item">
               <button class="btn slider__toggle" type="button"><span class="visually-hidden">Третий слайд</span></button>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section class="price">
+        <h2 class="visually-hidden">Виды и стоимость тарифов</h2>
         <div class="price__wrapper">
           <div class="price__wrapper-inner">
             <div class="price__table-wrap">
@@ -208,10 +204,8 @@
     </main>
     <footer class="page-footer">
       <section class="page-footer__contacts contacts-group">
-        <p class="contacts-group__header">
-          <span class="contacts-group__appeal">Остались вопросы?</span>
-          <span>Свяжитесь с нами!</span>
-        </p>
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <p class="contacts-group__header">Остались вопросы? Свяжитесь с нами!</p>
         <div class="contacts-group__wrapper">
           <div class="contacts-group__item contacts-group__item--phone">
             <span class="contacts-group__text">Звоните:</span>
@@ -221,9 +215,9 @@
             <span class="contacts-group__text contacts-group__text--email">Пишите:</span>
             <a class="contacts-group__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
-          <div class="contacts-group__item contacts-group__item--adress">
-            <span class="contacts-group__text contacts-group__text--adress">Приезжайте в гости:</span>
-            <p class="contacts-group__address contacts-group__adress--firm">ул. Большая Конюшенная, 19/8</p>
+          <div class="contacts-group__item contacts-group__item--address">
+            <span class="contacts-group__text contacts-group__text--address">Приезжайте в гости:</span>
+            <p class="contacts-group__address contacts-group__address--firm">ул. Большая Конюшенная, 19/8</p>
           </div>
         </div>
       </section>
@@ -270,7 +264,7 @@
           <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
-            <svg class="copyright__link-svg" width="26.943px" height="34.09px">
+            <svg class="copyright__link-svg" width="26.943" height="34.09">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>

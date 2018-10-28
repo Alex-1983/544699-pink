@@ -22,7 +22,8 @@
     margin: 0;
     margin-top: 5px;
     padding-top: 58px;
-    width: 46.2%;
+
+    width: 435px;
   }
 }
 
@@ -35,9 +36,6 @@
 
   width: 280px;
   min-height: 35px;
-
-  argin-bottom: 40px;
-
 
   font-weight: 400;
   font-size: @font-size;
@@ -87,6 +85,7 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 115px;
+    max-width: 391px;
   }
 
   &::before {
@@ -136,7 +135,8 @@
   }
 }
 
-.radio__input:hover + .radio__label::before {
+.radio__input:hover + .radio__label::before,
+.radio__input:focus + .radio__label::before {
   border: 2px solid @bg-blue;
 }
 

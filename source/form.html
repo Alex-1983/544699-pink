@@ -15,20 +15,22 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
-          <a class="main-nav__logo">
-            <svg class="main-nav__logo-desktop" width="146.3px" height="40.375px">
+          <a class="main-nav__logo" href="index.html">
+            <svg class="main-nav__logo-desktop" width="146.3" height="40.375">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-desktop"></use>
             </svg>
           </a>
           <div class="main-nav__item main-nav__item--active">
-            <svg class="main-nav__logo-mobile" width="74.426px" height="22.859px">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile"></use>
-            </svg>
-            <svg class="main-nav__logo-tablet" width="146.3px" height="40.375px">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-tablet"></use>
-            </svg>
+            <a href="index.html">
+              <svg class="main-nav__logo-mobile" width="74.426" height="22.859">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-mobile"></use>
+              </svg>
+              <svg class="main-nav__logo-tablet" width="146.3" height="40.375">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-white-tablet"></use>
+              </svg>
+            </a>
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
           </div>
           <ul class="main-nav__list site-list">
@@ -55,8 +57,9 @@
         </div>
       </section>
       <section class="form-pink">
+        <h2 class="visually-hidden">Форма заполнения для желающих поучавствовать в нашем конкурсе!</h2>
         <div class="form-pink__header">
-          <p class="form-Pink__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!&nbsp;<span class="form-pink__text">Пожалуйста, заполните форму ниже:</span></p>
+          <p class="form-pink__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!&nbsp;<span class="form-pink__text">Пожалуйста, заполните форму ниже:</span></p>
         </div>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__registration-wrapper">
@@ -78,7 +81,7 @@
           </fieldset>
           <fieldset class="checkbox">
             <legend class="checkbox__title">Ваши безбашенные достижения в путешествии</legend>
-            <div class="checkbox__container">
+            <div class="checkbox__list">
               <p class="checkbox__item checkbox__item--1">
                   <label class="checkbox__label">
                     <input class="visually-hidden checkbox__input" type="checkbox" name="selfie" checked>
@@ -128,12 +131,12 @@
               <div class="form__contacts">
                 <p class="form__contacts-item">
                   <label class="form__label-contacts" for="phone">Номер телефона</label>
-                  <input class="form__control-contacts icon-phone" id="phone" type="text" name="phone" placeholder="Номер, пожалуйста">
+                  <input class="form__control-contacts" id="phone" type="text" name="phone" placeholder="Номер, пожалуйста">
                   <span class="form__contacts-icon form__contacts-icon--phone"></span>
                 </p>
                 <p class="form__contacts-item">
-                  <label class="form__label-contacts" for="email">Адрес почты</label>
-                  <input class="form__control-contacts" id="email" type="email" name="email" placeholder="Введите почту *">
+                  <label class="form__label-contacts" for="mail">Адрес почты</label>
+                  <input class="form__control-contacts form__control-contacts--mail" id="mail" type="mail" name="mail" placeholder="Введите почту *">
                   <span class="form__contacts-icon form__contacts-icon--mail"></span>
                 </p>
               </div>
@@ -194,7 +197,7 @@
           <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
-            <svg class="copyright__link-svg" width="26.943px" height="34.09px">
+            <svg class="copyright__link-svg" width="26.943" height="34.09">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>

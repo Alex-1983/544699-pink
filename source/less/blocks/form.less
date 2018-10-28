@@ -245,6 +245,19 @@
   letter-spacing: 0.5px;
 }
 
+.form__control-contacts--mail::placeholder {
+  color: @bg-pink;
+}
+
+.form__control-contacts--mail:hover::placeholder {
+  color: @bg-blue;
+}
+
+.form__control-contacts--mail:active::placeholder {
+  color: rgba(40, 54, 69, 0.3);
+}
+
+
 .form__contacts-icon {
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -325,6 +338,7 @@
 }
 
 .form__control-textarea {
+  display: block;
   padding: 20px;
   padding-top: 14px;
 
