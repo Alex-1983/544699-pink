@@ -1,33 +1,20 @@
 // out:null
 .radio {
+  position: relative;
   margin: 0;
-  padding: 0;
+  padding: 114px 20px 44px;
   background-color: @bg-gray;
   border: none;
 
   @media (min-width: @tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 58px;
+
     order: 2;
 
     width: 100%;
 
     background-color: @bg-white;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 46.2%;
-  }
-}
-
-.radio-wrapper {
-  position: relative;
-  margin: 0;
-  padding: 114px 20px 44px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 51px;
-    padding-top: 55px;
-    padding-bottom: 58px;
-
     border: 2px solid #e5e5e5;
   }
 
@@ -35,6 +22,7 @@
     margin: 0;
     margin-top: 5px;
     padding-top: 58px;
+    width: 46.2%;
   }
 }
 

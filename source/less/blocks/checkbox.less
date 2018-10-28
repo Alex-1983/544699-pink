@@ -1,29 +1,21 @@
 // out:null
 .checkbox {
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: @bg-gray;
-
-  @media (min-width: @tablet-width) {
-    order: 4;
-
-    width: 100%;
-
-    background-color: @bg-white;
-  }
-}
-
-.checkbox__wrapper {
   position: relative;
   margin: 0;
   padding: 117px 20px 45px;
 
+  background-color: @bg-gray;
+
+  border: none;
+
   @media (min-width: @tablet-width) {
-    margin-bottom: 65px;
+    order: 4;
     padding-bottom: 50px;
     padding-top: 56px;
 
+    width: 100%;
+
+    background-color: @bg-white;
     border: 2px solid #e5e5e5;
   }
 
