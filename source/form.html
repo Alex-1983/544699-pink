@@ -5,6 +5,9 @@
     <title>HTML ACADEMY: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page">
@@ -73,51 +76,53 @@
               </p>
             </div>
           </fieldset>
-          <fieldset class="checkbox__wrapper">
-            <legend class="checkbox__title">Ваши безбашенные достижения в путешествии</legend>
-              <div class="checkbox">
-                <p class="checkbox__item checkbox__item--1">
-                  <label class="checkbox__label">
-                    <input class="visually-hidden checkbox__input" type="checkbox" name="selfie" checked="">
-                    <span class="checkbox__indicator"></span>
-                    Сделал селфи с акулой
-                  </label>
-                </p>
-                <p class="checkbox__item checkbox__item--2">
-                  <label class="checkbox__label">
-                    <input class="visually-hidden checkbox__input" type="checkbox" name="beach" checked="">
-                    <span class="checkbox__indicator"></span>
-                    Обгорел на пляже
-                  </label>
-                </p>
-                <p class="checkbox__item checkbox__item--3">
-                  <label class="checkbox__label checkbox__label--3">
-                    <input class="visually-hidden checkbox__input" type="checkbox" name="chuck-norris">
-                    <span class="checkbox__indicator"></span>
-                    Видел Чака Норриса
-                  </label>
-                </p>
-                <p class="checkbox__item checkbox__item--4">
-                  <label class="checkbox__label checkbox__label--4">
-                    <input class="visually-hidden checkbox__input" type="checkbox" name="souvenirs">
-                    <span class="checkbox__indicator"></span>
-                    Накупил сувениров
-                  </label>
-                </p>
-                <p class="checkbox__item checkbox__item--5">
-                  <label class="checkbox__label checkbox__label--5">
-                    <input class="visually-hidden checkbox__input" id="held-tower" type="checkbox" name="held-tower" checked="">
-                    <span class="checkbox__indicator"></span>
-                    Удержал башню
-                  </label>
-                </p>
-                <p class="checkbox__item checkbox__item--6">
-                  <label class="checkbox__label checkbox__label--6">
-                    <input class="visually-hidden checkbox__input" type="checkbox" name="trashed-hotel">
-                    <span class="checkbox__indicator"></span>
-                    Разгромил отель
-                  </label>
-                </p>
+          <fieldset class="checkbox">
+            <div class="checkbox__wrapper">
+              <legend class="checkbox__title">Ваши безбашенные достижения в путешествии</legend>
+                <div class="checkbox__container">
+                  <p class="checkbox__item checkbox__item--1">
+                    <label class="checkbox__label">
+                      <input class="visually-hidden checkbox__input" type="checkbox" name="selfie" checked>
+                      <span class="checkbox__indicator"></span>
+                      Сделал селфи с акулой
+                    </label>
+                  </p>
+                  <p class="checkbox__item checkbox__item--2">
+                    <label class="checkbox__label">
+                      <input class="visually-hidden checkbox__input" type="checkbox" name="beach" checked>
+                      <span class="checkbox__indicator"></span>
+                      Обгорел на пляже
+                    </label>
+                  </p>
+                  <p class="checkbox__item checkbox__item--3">
+                    <label class="checkbox__label checkbox__label--3">
+                      <input class="visually-hidden checkbox__input" type="checkbox" name="chuck-norris">
+                      <span class="checkbox__indicator"></span>
+                      Видел Чака Норриса
+                    </label>
+                  </p>
+                  <p class="checkbox__item checkbox__item--4">
+                    <label class="checkbox__label checkbox__label--4">
+                      <input class="visually-hidden checkbox__input" type="checkbox" name="souvenirs">
+                      <span class="checkbox__indicator"></span>
+                      Накупил сувениров
+                    </label>
+                  </p>
+                  <p class="checkbox__item checkbox__item--5">
+                    <label class="checkbox__label checkbox__label--5">
+                      <input class="visually-hidden checkbox__input" id="held-tower" type="checkbox" name="held-tower" checked>
+                      <span class="checkbox__indicator"></span>
+                      Удержал башню
+                    </label>
+                  </p>
+                  <p class="checkbox__item checkbox__item--6">
+                    <label class="checkbox__label checkbox__label--6">
+                      <input class="visually-hidden checkbox__input" type="checkbox" name="trashed-hotel">
+                      <span class="checkbox__indicator"></span>
+                      Разгромил отель
+                    </label>
+                  </p>
+                </div>
               </div>
             </fieldset>
             <fieldset class="form__contacts-wrapper">
@@ -139,7 +144,7 @@
               <legend class="radio__title">С каким приложением путешествовали?</legend>
               <div class="radio">
                 <p class="radio__item">
-                  <input class="visually-hidden radio__input" id="iOS" type="radio" name="radio" checked="">
+                  <input class="visually-hidden radio__input" id="iOS" type="radio" name="radio" checked>
                   <label class="radio__label" for="iOS">Pink для iOS</label>
                 </p>
                 <p class="radio__item">
@@ -214,6 +219,7 @@
         <button class="btn modal-answer__button" type="button">Закрыть окно</button>
       </div>
     </section>
+    <script src="js/picturefill.min.js"></script>
     <script src="js/app.min.js"></script>
   </body>
 </html>

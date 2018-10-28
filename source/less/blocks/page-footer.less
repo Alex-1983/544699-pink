@@ -2,46 +2,25 @@
 .page-footer__map {
   position: relative;
 
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.page-footer__map-wrapper {
+  position: relative;
+
   margin-left: auto;
   margin-right: auto;
 
-  width: 320px;
-  height: 200px;
-
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-position: 50% -443px;
-  background-repeat: no-repeat;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/bg-map-mobile@2x.jpg");
-    background-size: 320px auto;
-  }
+  .size(320px, 200px);
 
   @media (min-width: @tablet-width) {
-    width: 660px;
-    height: 375px;
-
-    background-image: url("../img/bg-map-tablet@1x.jpg");
-    background-position: 50% -346px;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-map-tablet@2x.jpg");
-      background-size: 700px auto;
-    }
+    .size(660px, 374px);
   }
 
   @media (min-width: @desktop-width) {
-
-    width: 960px;
-    height: 504px;
-
-    background-image: url("../img/bg-map-desktop@1x.jpg");
-    background-position: 50% -275px;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-map-desktop@2x.jpg");
-      background-size: 1200px auto;
-    }
+    .size(960px, 480px);
   }
 
   &::before {
@@ -50,21 +29,53 @@
     top: 96px;
     left: 142px;
 
+    z-index: 2;
+
     .size(36px, 36px);
 
     background-image: url("../img/icon-map-marker.svg");
     background-repeat: no-repeat;
 
     @media (min-width: @tablet-width) {
-      top: 194px;
-      left: 312px;
+      top: 193px;
+      left: 313px;
     }
 
     @media (min-width: @desktop-width) {
-      top: 266px;
+      top: 265px;
       left: 462px;
     }
   }
+}
+
+.page-footer__map-content {
+  position: absolute;
+  top: -444px;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    top: -347px;
+    left: -20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -275px;
+    left: -120px;
+  }
+}
+
+.page-footer__map-iframe {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 100%;
+  height: 504px;
+
+  border: 0;
+  frameborder: 0;
+  transform: translateX(-50%);
+  z-index: 3;
 }
 
 .page-footer__inner {
@@ -79,7 +90,7 @@
     align-items: flex-start;
 
     margin: 0 auto;
-    padding: 35px 0 32px;
+    padding: 38px 0 32px;
     width: 93.9%;
     max-width: 960px;
   }

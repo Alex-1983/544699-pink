@@ -9,18 +9,19 @@
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 33px;
+    padding-bottom: 47px;
 
     display: flex;
     flex-wrap: wrap;
 
     width: 93.9%;
-    max-width: 960px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     padding: 32px 10px 0 10px;
+
+    width: 960px;
   }
 }
 
@@ -110,7 +111,7 @@
 .form__control-registration::placeholder {
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 20px;
   color: @bg-blue;
   letter-spacing: 0.5px;
 }
@@ -141,7 +142,7 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    margin: 0 auto;
+    margin-left: 114px;
     margin-bottom: 5px;
     padding: 0 33px;
 
@@ -150,6 +151,10 @@
     letter-spacing: 0.4px;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 278px;
   }
 }
 
@@ -234,7 +239,7 @@
 .form__control-contacts::placeholder {
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 20px;
   color: @bg-blue;
   letter-spacing: 0.5px;
 }
@@ -268,12 +273,12 @@
 .form__textarea-wrapper {
   position: relative;
   margin: 0;
-  padding: 72px 20px 28px;
+  padding: 76px 20px 28px;
   border: none;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 67px;
-    padding: 47px 58px 40px;
+    padding: 47px 58px 45px;
 
     width: 100%;
     order: 5;
@@ -356,6 +361,7 @@
   padding: 11px 20px;
 
   width: 100%;
+  min-height: 150px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -364,11 +370,12 @@
     order: 6;
 
     padding: 0;
+
+    min-height: 63px;
   }
 }
 
 .form__button {
-  margin-bottom: 17px;
   padding: 20px 30px;
 
   width: 100%;
@@ -398,12 +405,16 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .form__text {
   margin: 0 auto;
+  margin-top: auto;
   padding: 0;
-  padding-top: 18px;
 
   width: 200px;
 
@@ -413,11 +424,17 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    margin-top: 18px;
+
     text-align: right;
+
+    letter-spacing: 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 320px;
+
+    letter-spacing: 0.4px;
   }
 }
 
